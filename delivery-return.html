@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Design-Sko.no/Delivery and Return</title>
+    
+</head>
+<body>
+    <div id="grid-container">
+        <header>
+            <div><a href="index.html" id="logo"><img src="img/Logo.jpg" alt="Designsko.no logo"></a></div>
+            <div id="home"><h2><a href="index.html">Design-Sko.no</a></h2></div>
+        </header>
+        <section id="categorysection">
+            <nav>
+                <i id="ham" class="fa-solid fa-bars"></i>
+                <ul id="category">
+                    <li><a href="product.html">Unisex</a></li>
+                    <li><a href="product.html">Herre</a></li>
+                    <li><a href="product.html">Dame</a></li>
+                    <li><a href="product.html">Barn</a></li>
+                </ul>          
+                <div id="search">
+                <input type="text" placeholder="Søk">
+                    <button>Søk</button>
+                    <a href="index.html" id="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </nav>
+        </section>
+        <main>
+            <article class="box-container">
+                <article class="box">
+                  <h3>Betaling:</h3>
+                  <p>Informatjon om betaling</p>
+                </article>
+                <article class="box">
+                  <h3>Retur:</h3>
+                  <p>Informatjon om retur</p>
+                </article>
+                <article class="box">
+                  <h3>Sendings Informatjon:</h3>
+                  <p>Informatjon om hvordan vi sender.</p>
+                </article>
+                <article class="box">
+                  <h3>Lorem Ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, velit vel bibendum bibendum, elit elit bibendum elit, vel bibendum elit elit elit.</p>
+                </article>
+                <article class="box">
+                  <h3>Lorem Ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, velit vel bibendum bibendum, elit elit bibendum elit, vel bibendum elit elit elit.</p>
+                </article>
+                <article class="box">
+                  <h3>Lorem Ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, velit vel bibendum bibendum, elit elit bibendum elit, vel bibendum elit elit elit.</p>
+                </article>
+            </article>
+            
+        </main>
+    
+        <section class="navbar">
+            <h4>Filter</h4>
+            <ul>
+              <li>
+                <select id="size-filter">
+                  <option value="">All Sizes</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                </select>
+              </li>
+              <li>
+                <select id="gender-filter">
+                  <option value="">All Shoes</option>
+                  <option value="Unisex">Unisex</option>
+                  <option value="dame">Dame</option>
+                  <option value="herre">Herre</option>
+                  <option value="barn">Barn</option>
+                </select>
+              </li>
+              <li>
+                <button id="apply-filters">Apply Filters</button>
+              </li>
+            </ul>
+        </section>
+        
+        <div id="contact-section">
+            <ul id="support">
+                <li><a href="delivery-return.html">Størelseguide</a></li>
+                <li><a href="delivery-return.html">Om oss</a></li>
+                <li><a href="delivery-return.html">Kontakt oss</a></li>
+                <li><a href="delivery-return.html">Personvern</a></li>
+                <li><a href="delivery-return.html">Vilkår</a></li>
+            </ul>
+            <ul id="socialMedia">
+                <li>Følg oss på:
+                  <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            <ul id="contactinfo">
+                <li><a href="#" class="icon"><i class="fa-solid fa-phone"></i></a></li>
+                <li><a href="#" class="icon"><i class="fa-solid fa-message"></i></a></li>
+            </ul>
+        </div>
+        <footer>
+            <span id="footerText">Design-Sko.no | Org.nr: 123456789 | Telefon: 12345678 | E-post:test@test.com</span>
+            <span id="copy">&copy; Christian Albinsson 2023</span>    
+        </footer>
+            
+        <script>
+            // Finn navigasjonsmenyen
+            let x = document.querySelector(".navbar")
+            // Legg til en hendelseslytter for klikk på menyikonet (ham)
+            document.getElementById("ham").addEventListener("click", (e) => {
+                // Sjekk om navigasjonsmenyen allerede har klassen "responsive"
+                if (x.className === "navbar") {
+                    // Hvis ikke, legg til klassen for responsiv meny
+                    x.className += " responsive";
+                } else {
+                    // Hvis den allerede har klassen, fjern den for å gjøre menyen skjult
+                    x.className = "navbar"
+                }
+            })
+            //Fjerne .responsive når vindu endrer størrelse.
+            window.addEventListener('resize', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.remove('responsive');
+            }); 
+        </script>    
+    </div>    
+</body>
+</html>
